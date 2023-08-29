@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SpartaDungeonBattle
 {
@@ -6,7 +7,16 @@ namespace SpartaDungeonBattle
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            List<CharacterData> list = GameManager.Instance().GetFileNameList();
+
+            foreach (CharacterData cd in list)
+            {
+                Console.WriteLine(cd.ToString());
+            }
+
+            Character player = null;
+            GameManager.Instance().LoadData(1, out player);
         }
     }
 }

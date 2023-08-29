@@ -1,0 +1,13 @@
+{
+  "Weapon": null,
+  "Armor": null,
+  "Name": "Rtan",
+  "Job": "전사",
+  "Level": 1,
+  "Experience": 0,
+  "Atk": 10.0,
+  "Def": 5,
+  "Hp": 100,
+  "Gold": 1500,
+  "Inventory": []
+}
